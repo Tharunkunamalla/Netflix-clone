@@ -11,7 +11,7 @@ body {
   /* border: 2px solid red; */
 }
 .backgroundContainer {
-  background-image: url("./banner.jpg");
+  background-image: url("../assets/img/banner.jpg");
   filter: blur(16px);
   height: 100vh;
   position: absolute;
@@ -21,7 +21,7 @@ body {
   z-index: -1;
 }
 .pinkOverlay {
-  background-color: rgba(104, 3, 20, 0.404);
+  background-color: rgba(42, 1, 8, 0.404);
   height: 100vh;
   position: absolute;
   top: 0;
@@ -118,7 +118,7 @@ nav {
 .bannerSection {
   /* border: 2px solid red; */
   height: 90vh;
-  background-image: url("./banner.jpg");
+  background-image: url("../assets/img/banner.jpg");
   background-size: 100% 100%;
   border-radius: 20px;
   margin-top: 2rem;
