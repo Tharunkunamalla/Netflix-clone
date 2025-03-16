@@ -1,14 +1,12 @@
 const express = require("express");
 const fs = require("fs");
 const cors = require("cors");
-const path = require("path");
-
 const app = express();
-const USERS_FILE = "assets/users.json";
 
 app.use(express.json());
 app.use(cors());
-app.use(express.static("public")); // Serves static files like HTML, CSS, JS
+
+const USERS_FILE = "./assets/users.json";
 
 // Read Users from File
 const readUsers = () => {
@@ -43,7 +41,6 @@ app.post("/login", (req, res) => {
   let validUser = users.find(
     (user) => user.email === email && user.password === password
   );
-
   if (validUser) {
     res.json({success: true, message: "Login Successful!"});
   } else {
@@ -52,5 +49,4 @@ app.post("/login", (req, res) => {
 });
 
 // Start Server
-const PORT = 5000;
-app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+app.listen(5000, () => console.log("Server running on port 5000"));

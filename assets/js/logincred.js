@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const formTitle = document.getElementById("formTitle");
   const toggleSignUp = document.getElementById("toggleSignUp");
   const toggleLogin = document.getElementById("toggleLogin");
-
+  const toggleIndicator = document.querySelector(".toggle-indicator");
   let isSignUp = true;
 
   function updateToggle() {
@@ -11,6 +11,9 @@ document.addEventListener("DOMContentLoaded", function () {
     authBtn.innerText = isSignUp ? "Sign Up" : "Login";
     toggleSignUp.classList.toggle("active", isSignUp);
     toggleLogin.classList.toggle("active", !isSignUp);
+    toggleIndicator.style.transform = isSignUp
+      ? "translateX(0%)"
+      : "translateX(100%)";
   }
 
   toggleSignUp.addEventListener("click", function () {
@@ -41,18 +44,29 @@ document.addEventListener("DOMContentLoaded", function () {
       return;
     }
 
-    const endpoint = isSignUp ? "/signup" : "/login";
-    const response = await fetch(`http://localhost:5000${endpoint}`, {
-      method: "POST",
-      headers: {"Content-Type": "application/json"},
-      body: JSON.stringify({email, password}),
-    });
+    if (isSignUp) {
+      const response = await fetch("/signup", {
+        method: "POST",
+        headers: {"Content-Type": "application/json"},
+        body: JSON.stringify({email, password}),
+      });
 
-    const result = await response.json();
-    alert(result.message);
+      const result = await response.json();
+      alert(result.message);
+    } else {
+      const response = await fetch("/login", {
+        method: "POST",
+        headers: {"Content-Type": "application/json"},
+        body: JSON.stringify({email, password}),
+      });
 
-    if (!isSignUp && result.success) {
-      window.location.href = "homepage.html";
+      const result = await response.json();
+      if (result.success) {
+        alert("Login Successful!");
+        window.location.href = "homepage.html";
+      } else {
+        alert("Invalid credentials.");
+      }
     }
   });
 
