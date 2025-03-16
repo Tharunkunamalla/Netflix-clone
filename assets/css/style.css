@@ -1,0 +1,215 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "franklin gothic medium", "arial narrow", arial, sans-serif;
+}
+body {
+  background-color: black;
+}
+.main {
+  /* border: 2px solid red; */
+}
+.backgroundContainer {
+  background-image: url("../img/banner.jpg");
+  filter: blur(16px);
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: -1;
+}
+.pinkOverlay {
+  background-color: rgba(42, 1, 8, 0.404);
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+.contentContainer {
+  position: relative;
+  z-index: 1;
+  padding: 0rem 2rem;
+}
+
+nav {
+  /* border: 2px solid green; */
+  height: 20vh;
+}
+
+.navBarButtonContainer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  /* border: 2px solid pink; */
+  height: 100%;
+}
+
+/* rightside */
+.uppernavsection {
+  /* border: 2px solid yellow; */
+  display: flex;
+  height: 50%;
+}
+.uppernavrightsection {
+  /* border: 2px solid orange; */
+  width: 50%;
+}
+
+.uppernavleftsection {
+  /* border: 2px solid purple; */
+  width: 50%;
+}
+.logo {
+  width: 29%;
+}
+/*Left Side*/
+.languageButton {
+  display: flex;
+  padding: 0.4rem 0.8rem;
+  border-radius: 50px;
+  background-color: transparent;
+  border: 1px solid white;
+  outline: none;
+  color: white;
+  cursor: pointer;
+}
+.languageButton:hover {
+  background-color: white;
+  color: black;
+}
+
+.languageButton p {
+  margin-left: 5px;
+}
+
+.signinButton {
+  padding: 0.4rem 0.8rem;
+  border-radius: 50px;
+  background-color: white;
+  outline: none;
+  border: none;
+  margin-left: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.signinButton:hover {
+  background-color: transparent;
+  border: red 1px solid;
+  color: white;
+  transition: all 0.3s;
+}
+
+.lowernavsection {
+  /* border: 2px solid blue; */
+  height: 50%;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+.menulist {
+  /* border: 2px solid purple; */
+  width: 40%;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-evenly;
+  border-radius: 50px;
+  background-color: rgba(0, 0, 0, 0.549);
+  box-shadow: 2px 3px 14px rgba(0, 0, 0, 0.652);
+  height: 7vh;
+}
+.menulist li {
+  /* border: 2px solid red; */
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.bannerSection {
+  /* border: 2px solid red; */
+  height: 90vh;
+  background-image: url("../img/banner.jpg");
+  background-size: 100% 100%;
+  border-radius: 20px;
+  margin-top: 0rem;
+  position: relative;
+}
+.overlay {
+  background-image: linear-gradient(
+    rgba(0, 0, 0, 0.3),
+    rgba(0, 0, 0, 0.7),
+    black
+  );
+  height: 100%;
+  width: 100%;
+  border-radius: 20px;
+  position: absolute;
+}
+.bannerContainer {
+  height: 80%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.bannerContainer h2 {
+  font-size: 4rem;
+  width: 50%;
+  text-align: center;
+  font-weight: 700;
+}
+.bannerContainer h4 {
+  font-size: 1.5rem;
+  margin: 20px;
+}
+.bannerContainer p {
+  font-size: 1rem;
+  margin: 20px;
+}
+.inputContainer {
+  /* border: 2px solid red; */
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* FIX: Align items properly */
+  padding: 5px;
+  border-radius: 50px;
+  background-color: rgba(255, 255, 255, 0.2);
+  gap: 10px;
+}
+
+.emailinputBox {
+  /* flex-grow: 1; FIX: Allow input to take space */
+  width: 70%;
+  padding: 1rem;
+  border-radius: 50px;
+  border: none;
+  outline: none;
+  color: white;
+  font-size: 1rem;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.emailinputBox::placeholder {
+  color: white;
+}
+.getStartedButton {
+  width: 30%;
+  background-color: red;
+  border: none;
+  outline: none;
+  border-radius: 50px;
+  color: white;
+  font-size: 1.2rem; /* FIX: Correct font-size */
+  font-weight: 900;
+  padding: 1rem;
+  cursor: pointer;
+  margin-left: 10px;
+}

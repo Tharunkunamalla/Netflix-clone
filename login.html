@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="assets/css/loginsty.css">
+        <title>Netflix Auth</title>
+    </head>
+    <body>
+        <div class="backgroundContainer">
+            <div class="pinkOverlay"></div>
+        </div>
+
+        <div class="login-container">
+            <div class="toggle-bar">
+                <button id="toggleSignUp" class="toggle-btn active">Sign
+                    Up</button>
+                <button id="toggleLogin" class="toggle-btn">Login</button>
+                <div class="toggle-indicator"></div>
+            </div>
+
+            <h2 id="formTitle">Sign Up</h2>
+            <input type="email" placeholder="Enter Email" id="userEmail"
+                required>
+            <input type="password" placeholder="Enter Password"
+                id="userPassword" required>
+            <button id="authBtn">Sign Up</button>
+        </div>
+
+        <script src="assets/js/logincred.js"></script>
+    </body>
+</html>
