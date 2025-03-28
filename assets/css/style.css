@@ -36,20 +36,17 @@ body {
 }
 
 nav {
-  /* border: 2px solid green; */
   height: 20vh;
   position: fixed;
   z-index: 10000;
 }
 
 .upperNavbarSection {
-  /* border: 2px solid blue; */
   display: flex;
   height: 50%;
 }
 
 .upperNavbarLeftSection {
-  /* border: 2px solid red; */
   width: 50%;
 }
 
@@ -58,7 +55,6 @@ nav {
 }
 
 .upperNavbarRightSection {
-  /* border: 2px solid green; */
   width: 50%;
 }
 
@@ -66,7 +62,6 @@ nav {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  /* border: 2px solid green; */
   height: 100%;
 }
 
@@ -96,7 +91,6 @@ nav {
 }
 
 .lowerNavbarSection {
-  /* border: 2px solid red; */
   height: 50%;
   color: white;
   display: flex;
@@ -104,7 +98,6 @@ nav {
 }
 
 .menuList {
-  /* border: 2px solid green; */
   width: 40%;
   list-style: none;
   display: flex;
@@ -117,7 +110,6 @@ nav {
 }
 
 .menuList li {
-  /* border: 2px solid red; */
   height: 100%;
   display: flex;
   align-items: center;
@@ -128,7 +120,6 @@ nav {
 }
 
 .bannerSection {
-  /* border: 2px solid red; */
   height: 90vh;
   background-image: url("/assets/img/banner.jpg");
   background-size: 100% 100%;
@@ -148,7 +139,6 @@ nav {
 }
 
 .bannerContainer {
-  /* border: 2px solid red; */
   height: 80%;
   width: 100%;
   position: absolute;
@@ -177,7 +167,6 @@ nav {
 }
 
 .inputContainer {
-  /* border: 2px solid green; */
   width: 50%;
   display: flex;
   justify-content: space-between;
@@ -214,7 +203,6 @@ nav {
 .reasonToJoinSection,
 .faqSection,
 .getStartedSection {
-  /* border: 2px solid red; */
   color: white;
 }
 
@@ -222,7 +210,6 @@ nav {
 .planSection h2,
 .reasonToJoinSection h2,
 .faqSection h2 {
-  /* border: 2px solid red; */
   margin-left: 5rem;
   font-size: 2.5rem;
 }
@@ -231,7 +218,6 @@ nav {
 .plansConatiner,
 .reasonsConatiner,
 .faqCardsContainer {
-  /* border: 2px solid green; */
   height: 100%;
   width: 90%;
   display: flex;
@@ -241,7 +227,6 @@ nav {
 
 .carouselCard {
   width: 12%;
-  /* border: 2px solid yellow; */
   height: 38vh;
   border-radius: 20px;
   position: relative;
@@ -272,7 +257,6 @@ nav {
 
 .planCard,
 .reasonCard {
-  /* border: 2px solid green; */
   height: 38vh;
   width: 23%;
   display: flex;
@@ -359,7 +343,6 @@ nav {
 }
 
 .faqCard {
-  /* border: 2px solid red; */
   width: 100%;
 }
 
@@ -367,9 +350,9 @@ nav {
 .faqAnswer {
   padding: 2rem;
   border-radius: 10px;
-  /* border: 1px solid white; */
   margin-bottom: 20px;
   background-color: #2e2e2e;
+  transition: all 1s ease;
 }
 
 .faqQuestion {
@@ -390,7 +373,6 @@ nav {
   cursor: pointer;
 }
 
-/* Jab faqQuestion p hover ho toh faqAnswer dikh jaye */
 .faqCard:hover .faqAnswer {
   display: block;
   cursor: pointer;
