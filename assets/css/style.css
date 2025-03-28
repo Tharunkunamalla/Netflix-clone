@@ -39,6 +39,7 @@ body {
 nav {
   /* border: 2px solid green; */
   height: 20vh;
+  position: static;
 }
 
 .navBarButtonContainer {
@@ -212,4 +213,36 @@ nav {
   padding: 1rem;
   cursor: pointer;
   margin-left: 10px;
+}
+
+/* coursel Container */
+.courselsection {
+  height: 100%;
+  color: white;
+}
+.courselsection h2 {
+  margin-left: 5rem;
+  font-size: 2.5rem;
+}
+.courselCardContainer {
+  height: 100%;
+  width: 80%;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 2rem auto;
+}
+
+.courselCard {
+  width: 15%;
+  height: 50vh;
+  border-radius: 20px;
+}
+.courselImageContainer {
+  height: 100%;
+  width: 100%;
+}
+.courselImageContainer img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
 }
