@@ -231,7 +231,12 @@ nav {
   justify-content: space-evenly;
   margin: 2rem auto;
 }
-
+.courselNumber span {
+  color: rgba(0, 0, 0, 0.8);
+  -webkit-text-stroke: 0.125rem rgb(255, 255, 255);
+  text-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.5);
+  font-size: 4rem;
+}
 .courselCard {
   width: 15%;
   height: 50vh;
