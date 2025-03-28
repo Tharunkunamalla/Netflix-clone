@@ -83,11 +83,22 @@ nav {
   outline: none;
   border: none;
   margin-left: 10px;
+  margin-right: 20px;
   font-size: 1rem;
+}
+.signinButton:hover {
+  cursor: pointer;
+  background-color: red;
+  color: white;
 }
 
 .languageButton p {
   margin-left: 5px;
+}
+.languageButton:hover {
+  cursor: pointer;
+  color: black;
+  background-color: white;
 }
 
 .lowerNavbarSection {
@@ -231,7 +242,10 @@ nav {
   border-radius: 20px;
   position: relative;
 }
-
+.carouselCard:hover {
+  cursor: pointer;
+  transform: scale(1.2rem);
+}
 .carouselNumberContainer {
   position: absolute;
   left: -20px;
