@@ -119,12 +119,38 @@ nav {
   backdrop-filter: blur(7px);
   height: 7vh;
 }
-
 .menuList li {
   height: 100%;
   display: flex;
   align-items: center;
 }
+
+.menuListItems a {
+  position: relative;
+  color: white;
+  padding: 10px 15px;
+}
+.menuListItems a:hover {
+  cursor: pointer;
+  color: rgba(235, 28, 28, 0.405);
+  transition: all 0.3s ease-in-out;
+}
+/* .menuListItems a::after {
+  content: " ";
+  position: absolute;
+  left: 0;
+  bottom: -0.3px;
+  width: 0;
+  height: 3px;
+  background-color: rgba(121, 51, 51, 0.341);
+  transition: width 0.3s ease-in-out;
+} */
+/* 
+.menuListItems a:hover::after {
+  color: #fff;
+  border-radius: 30px;
+  width: 100%;
+} */
 
 .sectionsContainer {
   margin-top: 20vh;
